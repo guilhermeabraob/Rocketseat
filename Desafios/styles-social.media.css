@@ -17,18 +17,48 @@
      justify-content: center;
  }
 
- .container .container-tree {
+ .container-tree {
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
  }
 
- .container-tree .foto-perfil {
-    height: 200px;
-    width: 200px;
-    left: 619px;
-    top: 207px;
-    border-radius: 0px;
-    
+ .round-image {
+     box-sizing: border-box;
+     padding: 5px;
+     border: #BB99DD solid 2px;
+     border-radius: 50%;
+     width: 200px;
+     height: 200px;
+     top: 207px;
+     left: 619px;
  }
+
+ .link-tree li {
+    box-sizing: border-box;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px;
+    width: 326px;
+    height: 49px;
+    margin: 10px;
+    left: 556px;
+    top: 486px;
+    border: #BB99DD 2px solid;
+    border-radius: 4px; 
+ }
+
+ .social-icons a {
+     margin-right: 10px;
+     margin-left: 10px;
+ }
+
+a:link { 
+    text-decoration: none; 
+    color: #BB99DD;
+}
+
+
