@@ -41,8 +41,8 @@ STRING:
 '' // aspas simples 
 `` // template literals ou template strings
 
-* Quando vo qusier apresentar uma string que tenha aspas duplas no meio, vc deve usar as aspas simples em volta, e vice-versa. 
-* `` // template se difere das outras aspas, poris permite utilisarmos o código em multi linhas. 
+* Quando vc quiser apresentar uma string que tenha aspas duplas no meio, vc deve usar as aspas simples em volta, e vice-versa. 
+* `` // template se difere das outras aspas, pois permite utilisarmos o código em multi linhas. 
 
 ----------
 

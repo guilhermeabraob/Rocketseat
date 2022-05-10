@@ -1,26 +1,42 @@
+//EXERCÍCIOS
 
-// #VARIÁVEIS E TIPOS DE DADOS
+/*
+var weight;
 
-//Declaração or declaration
-var name
+console.log(typeof weight)
 
-//assignment or atribuição de valores
-name = "Gui"
 
-//que tipo de dado foi colocado na variável acima?
+    let name = "Guilherme Abrão B"
+    let age = 34
+    let stars = 78.0
+    let isSubscribed = true
 
-console.log(typeof name)
+    console.log(' ' + name + ' de idade ' + age + ' anos pesa ' + stars + ' kg.' )
 
-//agrupamento de declarações
-let age 
-isHuman = true 
+    */
 
-// o que eu fiz na função log abaixo? eu apliquei multiplos argumentos
-console.log(name, age, isHuman)
+let student = {
 
-//escrita de Texto + Variáveis
-console.log('o ' + name + ' tem ' + age + ' anos.')
+        name: "Guilherme Abrão B",
+        age: 34,
+        stars: 78.0,
+        isSubscribed: true,
 
-//interpolando valores com template literals or template strings
+    };
 
-console.log(`o ${name} tem ${age} anos. `)
+
+//console.log(`${student.name} tem ${student.age} anos e pesa ${student.stars}kg.`)
+
+const john = {
+    name: "John",
+    age: 30,
+    stars:75.5
+    isSubscribed: true,
+}
+
+let students = [
+    student, 
+]
+
+console.log(students[1])
+
