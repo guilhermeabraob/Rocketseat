@@ -1,23 +1,26 @@
-//VARIÁVEIS
 
-/*
+// #VARIÁVEIS E TIPOS DE DADOS
 
-*Nomes simbólicos para receber valor
-*Atalhos de código
-*Identificadores
-*3 palavras reservadas para criar uma variável
-    *var
-    *let
-    *const (não muda de valor)
+//Declaração or declaration
+var name
 
---------
+//assignment or atribuição de valores
+name = "Gui"
 
-* o JS é  uma linguagem, que por natureza, é FRACAMENTE TIPADA e DINÂMICA, ou seja, as variáveis não recisam ter um tipo previamente definido e podemos mudar o coteúdo da variáve. 
+//que tipo de dado foi colocado na variável acima?
 
-Ex de um código FORTEMENTE TIPADO:
-let clima:String = ""
+console.log(typeof name)
 
-explicação: a gente tipou o codigo fortemente como String, caso eu terminasse aquele codigo com um valor do tipo Boolean, nós teríamos problemas. 
+//agrupamento de declarações
+let age 
+isHuman = true 
 
+// o que eu fiz na função log abaixo? eu apliquei multiplos argumentos
+console.log(name, age, isHuman)
 
-*/
+//escrita de Texto + Variáveis
+console.log('o ' + name + ' tem ' + age + ' anos.')
+
+//interpolando valores com template literals or template strings
+
+console.log(`o ${name} tem ${age} anos. `)
