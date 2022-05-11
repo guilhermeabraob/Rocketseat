@@ -20,17 +20,26 @@ creatPhrases ()
 
 
 //#PARÂMETROS E ARGUMENTOS
-//function expression
-// function anonymous
 
-//parâmetros (parameters) aqui nessa função CRIADA, number1 e number2, são PARÂMETROS.
+/*# function expression or  function anonymous - 
+É como chamamos uma outra maneira de declarar uma função */
+
+/*QUANDO FORMOS DECLARAR FUNÇÃO DENTRO DE UMA VARIAVEL IREMOS DECLARAR COMO O ABAIXO. 
+
+CONST (VARIAVEL) + SUM *SOMAR* *É O NOME DA FUNÇÃO* + FUNCTION ({
+
+})
+*/
+
+//parâmetros (parameters) aqui nessa função CRIADA, number1 e number2, são PARÂMETROS. 
+
 const sum = function (number1, number2) {
     console.log(number1+number2)
 }
 
 //argumentos. nessa função EXECUTADA, 2 e 3, são ARGUMENTOS. Abaixo foi utilizado a função, que tem cmo finalidade repetir a execução do código várias vezes.
+
+//Explicação: a execução abaixo da função acima, alem de executar a função, ela também linkou seus argumentos aos parametros para que a função pudesse ser executada e fazer a soma corretamente. 
 sum(2, 3)
 sum(10, 20)
 sum(35, 35)
-
-//
