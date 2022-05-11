@@ -30,12 +30,12 @@ let student = {
 const john = {
     name: "John",
     age: 30,
-    stars:75.5
+    stars:75.5,
     isSubscribed: true,
 }
 
 let students = [
-    student, 
+    student, john
 ]
 
 console.log(students[1])
