@@ -88,7 +88,7 @@ Exemplo:
 console.log({
     name: "Gui"
 })
-explicação: Eu tenho um Objeto (console.log),   que por sua vez, tem uma propriedade (name), que tem valor(Gui)
+explicação: Eu tenho um Objeto que tem uma propriedade (name), que tem valor(Gui)
 
 -----------
 

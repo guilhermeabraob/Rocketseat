@@ -42,3 +42,41 @@ const sum = function (number1, number2) {
 //Explicação: a execução abaixo da função acima, alem de executar a função, ela também linkou seus argumentos aos parametros para que a função pudesse ser executada e fazer a soma corretamente. 
 sum(2, 3)
 
+//# FUNÇÃO HOISTING
+//A função foi EXECUTADA primeiro antes de ser CRIADA. Ela funcionará normalmente, pois com esse modelo, ela consegue fazer o efeito hoisting(elevação), jogando a CRIAÇÃO da função para cima da EXECUÇÃO. 
+
+sayMyName ()
+
+function sayMyName () {
+    console.log ('Guilherme')
+}
+
+//ATENÇÃO! Quando criamos uma função de EXPRESSÃO, ela não sofrerá HOISTING(ELEVAÇÃO), MESMO UTILIZANDO O VAR. 
+
+sayMyName ()
+
+var sayMyName = function () {
+    console.log('Guilherme')
+}
+
+//# Outro meio de escrever uma função 
+//Arrow (seta) function
+
+const sayMyName = () => {
+    console.log('Guilherme')
+}
+
+sayMyName('Guilherme')
+
+ // CALLBACK FUNCTION: NADA MAIS É, QUE UMA FUNÇÃO QUE PASSA COMO PARAMETRO PARA OUTRA FUNÇÃO. 
+//Explicação do Callback abaixo. A execução abaixo da funcção criada acima da execução, está passando seus valores como parâmetros para a criação da função. 
+
+function sayMyName (name) {
+    console.log(name)
+}
+
+sayMyName (
+    () => {
+        console.log {'estou em uma callback'}
+    }
+)
