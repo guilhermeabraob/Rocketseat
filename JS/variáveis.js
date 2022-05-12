@@ -42,11 +42,11 @@ explicação: a gente tipou o codigo fortemente como String, caso eu terminasse 
 
 #VAR
 *HOISTING = Elevação
-O conceito Elevação significa que o JS qndo ler a variavel Var, pegara a Var de dentro do escopo e elevara ela acima. 
+O conceito Elevação significa que o JS qndo ler a variavel Var, pegara a Var de dentro do escopo e elevara ela acima do escopo. 
 
 *Var é GLOBAL, possui o conceito Hoisting, portanto, poderá funcionar dentro ou fora de um bloco. O que está dentro daquele bloco ao meio, é LOCAL, e tudo que está dentro da tag <script> é GLOBAL.
 
-*O JS faz a leita da aplicação de cima para baixo de forma verticalmente. 
+*O JS faz a leitura da aplicação de cima para baixo de forma verticalmente. 
 
 Ex: No html:
 
@@ -63,7 +63,7 @@ console.log('> existe X antes do bloco?', x)
 --------
 
 #CONST E LET
-*Const e Let são variáveis que sófuncionam no escopo onde foram criadas. 
+*Const e Let são variáveis que só funcionam no escopo onde foram criadas. 
 
 Ex: 
 

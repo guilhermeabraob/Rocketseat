@@ -21,12 +21,12 @@ creatPhrases ()
 
 //#PARÂMETROS E ARGUMENTOS
 
-/*# function expression or  function anonymous - 
+/* # function expression or  function anonymous - 
 É como chamamos uma outra maneira de declarar uma função */
 
 /*QUANDO FORMOS DECLARAR FUNÇÃO DENTRO DE UMA VARIAVEL IREMOS DECLARAR COMO O ABAIXO. 
 
-CONST (VARIAVEL) + SUM *SOMAR* *É O NOME DA FUNÇÃO* + FUNCTION ({
+CONST (VARIAVEL) + SUM *SOMAR* *É O NOME DA FUNÇÃO*  =  FUNCTION ({
 
 })
 */
@@ -41,5 +41,4 @@ const sum = function (number1, number2) {
 
 //Explicação: a execução abaixo da função acima, alem de executar a função, ela também linkou seus argumentos aos parametros para que a função pudesse ser executada e fazer a soma corretamente. 
 sum(2, 3)
-sum(10, 20)
-sum(35, 35)
+
