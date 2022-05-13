@@ -81,14 +81,27 @@ Objeto tem suas propriedades e suas funcionalidades.
 *Propriedades / Atributos
 *Funcionalidades / Métodos 
 
-{ propriedades: "valor"}
 
-Exemplo: 
+    * PROPRIEDADE: VALOR FIXO. 
+    * MÉTODO: FUNÇAO
 
-console.log({
-    name: "Gui"
-})
-explicação: Eu tenho um Objeto que tem uma propriedade (name), que tem valor(Gui)
+Obs: Qndo vc abre as chaves, voce ja esta criando um Objeto
+
+{ 
+    propriedades: "valor"
+}
+
+Ex1: let car {
+    marca: BMW
+    andar: function () {
+        return console.log('andou')
+    }
+}
+
+marca: propriedade
+bmw: valor
+andar: metodo (funcionalidade)
+
 
 -----------
 
