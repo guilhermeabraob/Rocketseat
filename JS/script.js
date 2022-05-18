@@ -1,101 +1,21 @@
-//#CONDICIONAIS E CONTROLE DE FLUXO
+//DESAFIO
 
-//If....Else
+/* 1) Crie um algoritimo que transforme as notas do sistema numérico para sistema de notas em caracteres tipo A B C
 
-/*
-let temperature = 36,5
+* de 90 para cima - A
+* entre 80 - 89 - B 
+* entre 70 - 79 - C
+* entre 60 - 69 - D
+* menor que 60 - F
 
-if (temperature >= 37) {
-    console.log('Febril')
-} else {
-    'Saudável'
-}
 */
 
+let nota = 70
 
-//Outro jeito de If e Else
-
-/*
-let temperature = 38 
-if (temperature >= 37.5) {
-    console.log('Febre')
-} if else (temperature < 37.5 && temperature >= 37){
-    console.log('Febril')
-} else {
-    console.log('Saudável')
+if(nota >= 90) {
+    console.log('A')
+} if else(nota >= 80 && nota <= 89) {
+    console.log('B')
+}  else {
+    console.log('C')
 }
-*/
-
-// Outro jeito If Else
-
-let temperature = 36.5 
-let highTemperature = temperature > 37.5
-let mediumTemperature = temperature < 37.5 && temperature >= 37
-
-if(highTemperature) {
-    console.log('Febre alta')
-}
-if else(mediumTemperature) {
-    console.log('Febril')
-} else {
-    console.log(Saudável)
-}
-
----------
-
-//Switch
-
-function calculate(number1, operator, number2) {
-    let result
-
-    switch (operator) {
-        case '+':
-            result = number1 + number2
-            break
-        case '-':
-            result = number1 - number2
-            break
-        case '*':
-            result = number1 * number2
-            break
-        case '/':
-            result = number1 / number2
-            break
-        default:
-            console.log('não implementado')
-            break;
-    }
-    return result
-}
-
-console.log(calculate(4, '+', 8))//resultado = 12
-
-----------
-
-// Throw e Try...Catch
-
-// Vamos tentar (TRY) executar um bloco de código, e se houver algum erro nesse bloco de código, o Trow vai disparar (informar) que há um erro. E o catch vai capturar esse erro e dar continuidade ao código, assim, a aplicação segue em diante. 
-// A ordem desse processo é: 1° Try, 2°Throw e 3°Catch
-
-//EX:
-
-function sayMyName(name = '') {
-    if (name === '')
-    throw 'nome é obrigatório'
-}
-    try {
-      sayMyName()  
-    } catch(e) {
-        console.log(e)
-    }
-console.log('após a função de erro')
-
-/* 
-
-Obs1: O throw pode ser usado sem o Try...Catch, mas isso fará com que a função seja interrompida!
-Obs2: Por padrão, o catch nós utilizamos como parâmetro o (e)
-
-Vamos explicar o processo acimma: Seguindo a ordem do processo, a leitura do código é iniciada com o Try tetando executar a função acima que foi apenas salvada em memória (ou seja, linha 82 até 85, estamos apenas informando ao js qual é a nossa função. Após isso, caso a função não consiga ser executada, como nós utilizamos o Throw em nossa função, ele terá o papel de disparar um erro com a mensagem "nome é obrigatório". Como nós estamos utilizando o Try..Catch junto do Throw, o Catch aós a disparada de erro do Throw, capurará esse erro e liberando a função ou o código para que continuem a ser executados. Então aquele console.log da linha 91, é executado graças a capturada o erro pelo Catch! 
-
-
-
