@@ -19,7 +19,7 @@ if (temperature >= 37) {
 let temperature = 38 
 if (temperature >= 37.5) {
     console.log('Febre')
-} if else (temperature < 37.5 && temperature >= 37){
+} else if (temperature < 37.5 && temperature >= 37){
     console.log('Febril')
 } else {
     console.log('Saudável')
@@ -35,7 +35,7 @@ let mediumTemperature = temperature < 37.5 && temperature >= 37
 if(highTemperature) {
     console.log('Febre alta')
 }
-if else(mediumTemperature) {
+else if(mediumTemperature) {
     console.log('Febril')
 } else {
     console.log(Saudável)

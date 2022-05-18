@@ -69,7 +69,7 @@ const sayMyName = () => {
 sayMyName('Guilherme')
 
  // CALLBACK FUNCTION: NADA MAIS É, QUE UMA FUNÇÃO QUE PASSA COMO PARAMETRO PARA OUTRA FUNÇÃO. 
-//Explicação do Callback abaixo. A execução abaixo da funcção criada acima da execução, está passando seus valores como parâmetros para a criação da função. 
+//Explicação do Callback abaixo. A execução abaixo da função criada acima da execução, está passando seus valores como parâmetros para a criação da função. 
 
 function sayMyName (name) {
     console.log(name)
@@ -80,3 +80,4 @@ sayMyName (
         console.log {'estou em uma callback'}
     }
 )
+

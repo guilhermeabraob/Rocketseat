@@ -10,12 +10,48 @@
 
 */
 
-let nota = 70
+/*
+function getScore(nota) {
+    let A = nota >= 90
+    let B = nota >= 80 && nota <=89
+    let C = nota >= 70 && nota <=79
+    let D = nota >= 60 && nota <=69
+    let F = nota < 60
+    
 
-if(nota >= 90) {
-    console.log('A')
-} if else(nota >= 80 && nota <= 89) {
-    console.log('B')
-}  else {
-    console.log('C')
+    if (A) {
+        console.log('A')
+    } else if(B) {
+        console.log('B')
+    } else if(C) {
+        console.log('C')
+    } else if(D) {
+        console.log('D')
+    } else {
+        console.log('F')
+    }
+    
 }
+
+console.log(getScore(100))
+console.log(getScore(-1))
+console.log(getScore(45))
+console.log(getScore(75))
+console.log(getScore(62))
+console.log(getScore(82))
+console.log(getScore(92))
+console.log(getScore(5))
+console.log(getScore(52))
+*/
+
+// 2) Crie um objeto que possuirá 2 propriedades, ambas do tipo array:
+//      - receitas:
+//      - despesas: 
+// Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar uma mensagem se a família está com saldo positivo ou negativo, seguido do valor do saldo. 
+
+let família {
+    receitas = [],
+    despesas = [],
+}
+
+function
