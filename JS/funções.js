@@ -1,4 +1,36 @@
-//#FUNÇÕES (SERVE PARA EXECUTAR CODIGOS VARIAS VEZES)
+//#FUNÇÕES (SERVE PARA EXECUTAR CODIGOS VARIAS VEZES). São Ações que são executadas assim que são CHAMADAS ou em decorrência de algum EVENTO. 
+
+/*
+
+* Chamada: Dá a ordem para função rodar.
+* Retorno (return) = resultado da função
+* Parametro = informação de entrada, aquilo que deve ser feito pela função, o proposito. 
+Acão = como a função vai funcionar
+
+OBS: NEM TODA FUNÇAO TEM PARAMETROS, NEM TODA FUNÇAO TEM RETORNOS! 
+
+ function Açao(parametros) {
+
+ }
+
+ação(5) - chamada, ou seja, ordem para que a função inicie. 
+
+ ** 5 é um parâmetro, quando dermos a chamada, o 5 vai para o parâmetro, então nesse exemplo, o parâmetro passa a valer 5.
+
+ ** Açao = nome da função
+
+#OUTRO EXEMPLO (saber se um número é par ou ímpar)
+
+function parOuÍmpar(n) {
+    if(n%2 == 0) {
+    return 'par'
+} else {
+    return 'ímpar'
+}
+}
+console.log(parOuÍmpar(4))
+
+*/
 
 //criar um aplicativo de frases motivacionais
 
@@ -26,9 +58,6 @@ creatPhrases ()
 
 /*QUANDO FORMOS DECLARAR FUNÇÃO DENTRO DE UMA VARIAVEL IREMOS DECLARAR COMO O ABAIXO. 
 
-CONST (VARIAVEL) + SUM *SOMAR* *É O NOME DA FUNÇÃO*  =  FUNCTION ({
-
-})
 */
 
 //parâmetros (parameters) aqui nessa função CRIADA, number1 e number2, são PARÂMETROS. 

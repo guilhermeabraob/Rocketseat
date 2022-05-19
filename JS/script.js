@@ -49,9 +49,20 @@ console.log(getScore(52))
 //      - despesas: 
 // Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar uma mensagem se a família está com saldo positivo ou negativo, seguido do valor do saldo. 
 
-let família {
-    receitas = [],
-    despesas = [],
+let family {
+    incomes: [2500, 1000, 5000],
+    expenses: [-1000, -500, -1000]
 }
 
-function
+
+function balance(incomes, expenses) {
+    if (incomes + expenses < 0) {
+        return 'loss'
+    } else if (incomes + expenses == 0) {
+        return 'stable'
+    } else {
+        return 'profit'
+    }
+}
+
+console.log(balance(incomes + outcomes))
