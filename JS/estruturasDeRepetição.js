@@ -1,99 +1,118 @@
-//#CONDICIONAIS E CONTROLE DE FLUXO
-
-//If....Else
-
-/*
-let temperature = 36,5
-
-if (temperature >= 37) {
-    console.log('Febril')
-} else {
-    'Saudável'
-}
-*/
-
-
-//Outro jeito de If e Else
+// Estrutura de Repetição
+// FOR
 
 /*
-let temperature = 38 
-if (temperature >= 37.5) {
-    console.log('Febre')
-} else if (temperature < 37.5 && temperature >= 37){
-    console.log('Febril')
-} else {
-    console.log('Saudável')
+for (let i = 0; i < 10; i++) {
+    console.log(i)
+} 
+*/
+//Explicando: For é usado para fazer um loop, uma repetição. Na sintaxe acima, iniciamos com o For que dá o comando de repetir, declaramos uma variável "i" por convenção, após isso, digitamos a condição que queremos(no ex acima, a condição é que i seja menor que 10), e no final, colocamos o comando de incremento de 1(++), ou seja, declaramos a variavel i com o valor 0, enquanto i for menor que 10, será incrementado 1. 
+
+/*
+for (let i = 10; i > 0; i--) {
+    if(i===5) {
+        break;
+    }
+    console.log(i)
 }
+
+console.log(i)
+
+Explicando: Variavel i com valor de 10, enquanto i for maior que zero, subtraimos 1. Ou seja, i = 10, 10 é maior que 0 (condição), sim, então subtraimos um, 9 é maior que zero, sim, entao subtraimos 1, e assim vai. 
+Obs: o BREAK serve para pausar o código, no ex acima, o if informa que quando o i chegar no valor 5, o código será pausado. 
 */
 
-// Outro jeito If Else
-
-let temperature = 36.5 
-let highTemperature = temperature > 37.5
-let mediumTemperature = temperature < 37.5 && temperature >= 37
-
-if(highTemperature) {
-    console.log('Febre alta')
-}
-else if(mediumTemperature) {
-    console.log('Febril')
-} else {
-    console.log(Saudável)
-}
-
----------
-
-//Switch
-
-function calculate(number1, operator, number2) {
-    let result
-
-    switch (operator) {
-        case '+':
-            result = number1 + number2
-            break
-        case '-':
-            result = number1 - number2
-            break
-        case '*':
-            result = number1 * number2
-            break
-        case '/':
-            result = number1 / number2
-            break
-        default:
-            console.log('não implementado')
-            break;
+/*
+for(let i = 10; i > 0; i--) {
+    if(i===5) {
+        continue;
     }
-    return result
+    console.log(i)
 }
 
-console.log(calculate(4, '+', 8))//resultado = 12
 
-----------
+Nesse ex acima, o CONTINUE serve para pular o número que temos ali no if. 
+*/
 
-// Throw e Try...Catch
+//WHILE
 
-// Vamos tentar (TRY) executar um bloco de código, e se houver algum erro nesse bloco de código, o Trow vai disparar (informar) que há um erro. E o catch vai capturar esse erro e dar continuidade ao código, assim, a aplicação segue em diante.Caso a gente não tivesse usado o try...catch no código, a execução seria pausada com o erro, pois o Throw sem o Catch, faz com que a função ou codigo sejam interrompidos. 
-// A ordem desse processo é: 1° Try, 2°Throw e 3°Catch
-
-//EX:
-
-function sayMyName(name = '') {
-    if (name === '')
-    throw 'nome é obrigatório'
+/*
+let i = 0
+while(i < 10) {
+    console.log(i)
+    i++;
 }
-    try {
-      sayMyName()  
-    } catch(e) {
-        console.log(e)
-    }
-console.log('após a função de erro')
+
+Explicação: Mesmo coisa que o For, devemos usar o While, quando o i não vai parar. 
+
+//For... of
 
 /* 
+let name = 'Gui'
+let names = ['Gui', 'Pedro', 'Marcella']
 
-Obs1: O throw pode ser usado sem o Try...Catch, mas isso fará com que a função seja interrompida!
-Obs2: Por padrão, o catch nós utilizamos como parâmetro o (e)
+for(let char of name) {
+    console.log(char)
+}
+Explicando: let char of name = pegue uma letra da variavel name, ficando assim no console:
+G
+U
+I
 
-Vamos explicar o processo acima: Seguindo a ordem do processo, a leitura do código é iniciada com o Try tetando executar a função acima que foi apenas salvada em memória (ou seja, linha 82 até 85, estamos apenas informando ao js qual é a nossa função. Após isso, caso a função não consiga ser executada, como nós utilizamos o Throw em nossa função, ele terá o papel de disparar um erro com a mensagem "nome é obrigatório". Como nós estamos utilizando o Try..Catch junto do Throw, a disparada de erro do Throw, será capturado pelo Catch e liberando a função ou o código para que continuem a ser executados. Então aquele console.log da linha 91, é executado graças a capturada o erro pelo Catch! 
+*o char faz esse comando de pegar um caracter
+
+
+for(let name of names){
+    console.log(name)
+}
+Explicando: let name of names = pego um nome da variavel names.
+** o name faz esse comando de pegar o nome.
+
+No console:
+Gui
+Pedro
+Marcell
+*/
+
+//For...in = O For In, vai fazer um loop em cima de um objeto. 
+
+/*
+let person = {
+    name: 'Gui',
+    age: 34,
+    weight: 78.0
+}
+
+for(let property in person) {
+    console.log(property)
+}
+Explicando: for(let propoerty in person) = no objeto person, pegue a propriedade e atribua a variavel let.
+No console fica assim:
+name
+age
+weight
+
+* Para acessar uma propriedade especifica, podemos fazer assim:
+
+for(let property in person) {
+    console.log(property)
+    console.log(person.name)
+}
+
+OU ASSIM:
+
+let person = {
+    name: 'Gui',
+    age: 34,
+    weight: 78.0
+}
+
+for(let property in person) {
+    console.log(property)
+    console.log(person[property])
+}
+
+*/
+
+
 

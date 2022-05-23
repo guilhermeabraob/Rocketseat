@@ -55,8 +55,9 @@ let family {
 }
 
 
-function balance(incomes, expenses) {
-    if (incomes + expenses < 0) {
+
+function balance() {
+    if ( incomes + expenses < 0) {
         return 'loss'
     } else if (incomes + expenses == 0) {
         return 'stable'
@@ -66,3 +67,5 @@ function balance(incomes, expenses) {
 }
 
 console.log(balance(incomes + outcomes))
+
+

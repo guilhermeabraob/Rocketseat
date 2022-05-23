@@ -15,7 +15,7 @@ console.log(typeof name)
 let age 
 isHuman = true 
 
-// o que eu fiz na função log abaixo? eu apliquei multiplos argumentos
+// o que eu fiz no console.log abaixo? eu apliquei multiplos argumentos
 console.log(name, age, isHuman)
 
 //escrita de Texto + Variáveis
