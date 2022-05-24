@@ -96,6 +96,31 @@ o numero 2 é 25
 59
 a soma é undefined
 
+Explicação do resultado no console: O código imprime a linha 89 e 90. Após isso, o código vai para linha 91, entrando na função e execuando-a, fazendo a soma do number1 + number2, terminando de executar, o código retorna para a função, que por sua vez, não tem o RETURN, fazendo com que a a linha 97 apareça um undefined.
+
+**** Vamos ver agora, a função com o RETURN: 
+
+const sum = function(number1, number2){
+    total = number1 + number2
+    return total
+
+}
+let number1 = 34
+let number2 = 25
+
+console.log(`o número 1 é ${number1}`)
+console.log(`o número 2 é ${number2}`)
+console.log(`a soma é ${sum(number1, number2)}`)
+
+resultado no console:
+o numero 1 é 34
+o numero 2 é 25
+a soma é 59
+
+Explicação: Como essa função possui o RETURN, toda vez que uma função encontra uma linha dentro de si com um return, a função para imediatametne e retorna(retorna o que vem a frente), que nesse caso, são as variáveis das linhas 108 e 109, fazendo a soma. 
+
+
+
 
 
 --------
