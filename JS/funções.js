@@ -54,22 +54,55 @@ creatPhrases ()
 //#PARÂMETROS E ARGUMENTOS
 
 /* # function expression or  function anonymous - 
-É como chamamos uma outra maneira de declarar uma função */
+É como chamamos uma outra maneira de declarar uma função. Como por exemplo, declaramos uma função dentro de uma variavel. 
 
-/*QUANDO FORMOS DECLARAR FUNÇÃO DENTRO DE UMA VARIAVEL IREMOS DECLARAR COMO O ABAIXO. 
+const sum = function(number1, number2){
+    console.log(number1 + number2)
 
-*/
-
-//parâmetros (parameters) aqui nessa função CRIADA, number1 e number2, são PARÂMETROS. 
-
-const sum = function (number1, number2) {
-    console.log(number1+number2)
 }
 
-//argumentos. nessa função EXECUTADA, 2 e 3, são ARGUMENTOS. Abaixo foi utilizado a função, que tem cmo finalidade repetir a execução do código várias vezes.
+* P/ executar essa função acima:
+sum(2, 3) 
 
-//Explicação: a execução abaixo da função acima, alem de executar a função, ela também linkou seus argumentos aos parametros para que a função pudesse ser executada e fazer a soma corretamente. 
-sum(2, 3)
+
+//argumentos. nessa função EXECUTADA, 2 e 3, são ARGUMENTOS. A execução abaixo da função acima, alem de executar a função, ela também atribuiu seus argumentos aos parametros, então o os parâmetros passam a valer: 2 e 3. 
+
+-------------- 
+
+//Retornando Valores dentro da Função. 
+
+const sum = function(number1, number2){
+    console.log(number1 + number2)
+
+}
+let number1 = 34
+let number2 = 25
+*****ATENÇAO: o number 1 e number 2 aqui de fora do escopo da função da linha 74, é diferente do number1 e number2 de dentro da função!!!!!
+
+const sum = function(number1, number2){
+    console.log(number1 + number2)
+
+}
+let number1 = 34
+let number2 = 25
+
+console.log(`o número 1 é ${number1}`)
+console.log(`o número 2 é ${number2}`)
+console.log(`a soma é ${sum(number1, number2)}`)
+
+resultado no console:
+o numero 1 é 34
+o numero 2 é 25
+59
+a soma é undefined
+
+
+
+--------
+
+
+
+
 
 //# FUNÇÃO HOISTING
 //A função foi EXECUTADA primeiro antes de ser CRIADA. Ela funcionará normalmente, pois com esse modelo, ela consegue fazer o efeito hoisting(elevação), jogando a CRIAÇÃO da função para cima da EXECUÇÃO. 
