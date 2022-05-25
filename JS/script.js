@@ -54,30 +54,48 @@ let family = {
     expenses: [-1000, -500, -1000]
 }
 
+//Essa função apenas percorrerá todos elementos de cada array das propriedades da variavel family acima.
 function getArraySum(valuesArray) {
     let total = 0
-    for(let i; i < valuesArray.length; i+=1) {
-        total += valuesArray[i]
-    }
+    for(let i = 0; i < valuesArray.length; i+=1) {  
+        let currentValue = valuesArray[i]
+        total = total + currentValue // = total += currentValue 
+    } 
+    return total 
 }
 
+// i = index = indice, todo array tem um indice, seguindo o exemplo acima, no array do Incomes, 2500(family.incomes[0]), o i é o que vai percorrer o array! Entao, explicando a linha 59, primeiramente, devemos declarar o i, apos isso, temos a condição: i < valuesArray.length (o length tem o proposito de fazer o condição passar por todo array, por todos os elementos). No final da linha 59, o i+=1, significa que será acrescentado 1, quando o i percorrer de um elemento para o outro dentro do array. 
 
-function balance(objFamily) {
+//linha 61. NA LINHA 61 é onde está acontecendo a soma. Primeiro, nos declaramos let total = 0, depois na linha 61, a gente informou que o total recebe o 0(total declarado na 58) + o currentValue. E assim fazemos a soma do array. 
 
-    const totalIncomes = getArraySum(objFamily.incomes)
 
-    const totalExpenses = getArraySum(objFamily.expenses)
+function balance(objCookies) {
 
-    if (totalIncomes + totalExpenses < 0) {
-        return 'loss'
-    } else if (totalIncomes + totalExpenses == 0) {
-        return 'stable'
+    const totalIncomes = getArraySum(objCookies.incomes) // = 2500 + 1000 + 5000= 8500
+
+    const totalExpenses = getArraySum(objCookies.expenses) // = -1000 + -500 + -1000 = -2500
+
+    const balance = totalIncomes + totalExpenses // = 8500 + (-2500) = 6000 
+
+    let description
+
+    if (balance < 0) {
+        description = 'negativa'
+    } else if (balance == 0) {
+        description = 'estavel'
     } else {
-        return 'profit'
+        description = 'positiva'
     }
+    const result = {
+        balance,
+        description
+    }
+    return result
 }
 
+const balanceResult = balance(family)
+console.log('saldo da família é', balanceResult.balance, 'e a situação é', balanceResult.description) 
 console.log(balance(family))
-
+// Os PARAMETROS serverm para nos abstrairmos a complexidade de uma função. 
 
 
