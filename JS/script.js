@@ -49,6 +49,8 @@ console.log(getScore(52))
 //      - despesas: 
 // Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar uma mensagem se a família está com saldo positivo ou negativo, seguido do valor do saldo. 
 
+/*
+
 let family = {
     incomes: [2500, 1000, 5000],
     expenses: [-1000, -500, -1000]
@@ -87,7 +89,7 @@ function balance(objCookies) {
         description = 'positiva'
     }
     const result = {
-        balance,
+        balance,z
         description
     }
     return result
@@ -98,4 +100,15 @@ console.log('saldo da família é', balanceResult.balance, 'e a situação é', 
 console.log(balance(family))
 // Os PARAMETROS serverm para nos abstrairmos a complexidade de uma função. 
 
+*/
 
+-----------
+
+//3) Crie uma função que receba uma string em celsius ou fahrenheit e faça a transformação de uma unidade para outra. 
+
+// C = (F - 32) * 5/9
+// F = C * 9/5 + 32
+
+function degreesConverter(degrees1, degrees2) {
+    
+}
