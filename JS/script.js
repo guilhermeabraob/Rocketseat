@@ -49,7 +49,7 @@ console.log(getScore(52))
 //      - despesas: 
 // Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar uma mensagem se a família está com saldo positivo ou negativo, seguido do valor do saldo. 
 
-/
+/*
 
 let family = {
     incomes: [2500, 1000, 5000],
@@ -70,7 +70,7 @@ function getArraySum(valuesArray) {
 
 //linha 61. NA LINHA 61 é onde está acontecendo a soma. Primeiro, nos declaramos let total = 0, depois na linha 61, a gente informou que o total recebe o 0(total declarado na 58) + o currentValue. E assim fazemos a soma do array. 
 
-
+/*
 function balance(objCookies) {
 
     const totalIncomes = getArraySum(objCookies.incomes) // = 2500 + 1000 + 5000= 8500
@@ -109,6 +109,32 @@ console.log(balance(family))
 // C = (F - 32) * 5/9
 // F = C * 9/5 + 32
 
+/*
+
+function conversor(fahrenheit) {
+  let F = fahrenheit;
+  let celsius = (fahrenheit - 32) * (5/9);
+  return Math.round(celsius)
+}
+
+conversor(20);
+console.log(conversor(20) + 'C°')
+
+*/
+
+
+
+
+function conversor(degrees) {
+    let degrees = 20;
+    let C = (F - 32) * 5/9;
+    let F = C * 9/5 + 32
+    if('celcius') {
+      console.log()
+    }
+    
+    }
+-----------
 
 
 //FUNÇAO QUE CALCULA A MEDIA DE UM ARRAY

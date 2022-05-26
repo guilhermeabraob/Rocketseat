@@ -119,6 +119,36 @@ a soma é 59
 
 Explicação: Como essa função possui o RETURN, toda vez que uma função encontra uma linha dentro de si com um return, a função para imediatametne e retorna(retorna o que vem a frente), que nesse caso, são as variáveis das linhas 108 e 109, fazendo a soma. 
 
+-----------
+
+ 
+function valorReferencia(strVar, arrVar) {
+  strVar = 'String Modificada';
+  arrVar[0] = 'Array Modificado';
+}
+var texto = 'Valor Original';
+var vetor = ['Valor Original'];
+
+console.log('String ANTES de chamar a função:'  + texto +) 
+var vetor = ['Valor Original'];
+console.log('Array ANTES de chamar a função:'  + vetor[0] +); 
+
+*Apos chamar a função
+
+valorReferenca(texto, vetor);
+console.log('String APÓS chamar a função:' + texto +);
+console.log('Array APÓS chamar a função:' + vetor[0] +);
+
+RESULTADO NO CONSOLE:
+Strig antes de chamar a função: Valor Original
+Array antes de chamar a função: Valor Original
+Strig após chamar a função: Valor Original
+Array após chamar a função: Array Modificado  ****ATENÇÃO AQUI*****
+
+Parêmros do tipo Primitivos (strings, numéricos ou booleanos são passados por VALOR, ou seja, se o argumento for alterado dentro da função, essa alteração não se reflete na variável vora da função.)
+
+Já os Objetos são passados por REFERÊNCIA, ou seja, se ocorre uma alteração no objeto dentro da função, essa alteração se reflete oara o objeto fora da função. 
+
 
 
 
@@ -167,14 +197,5 @@ sayMyName (
         console.log {'estou em uma callback'}
     }
 )
+ --------
 
-function valorReferencia(strVar, arrVar) {
-  strVar = 'String Modificada';
-  arrVar[0] = 'Array Modificado';
-}
-var texto = 'Valor Original';
-var vetor = ['Valor Original'];
-
-console.log('String ANTES de chamar a função:'  + texto +) 
-var vetor = ['Valor Original'];
-console.log('Array ANTES de chamar a função:'  + vetor[0] +); 
