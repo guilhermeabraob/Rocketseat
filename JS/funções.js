@@ -168,3 +168,13 @@ sayMyName (
     }
 )
 
+function valorReferencia(strVar, arrVar) {
+  strVar = 'String Modificada';
+  arrVar[0] = 'Array Modificado';
+}
+var texto = 'Valor Original';
+var vetor = ['Valor Original'];
+
+console.log('String ANTES de chamar a função:'  + texto +) 
+var vetor = ['Valor Original'];
+console.log('Array ANTES de chamar a função:'  + vetor[0] +); 

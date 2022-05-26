@@ -49,7 +49,7 @@ console.log(getScore(52))
 //      - despesas: 
 // Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar uma mensagem se a família está com saldo positivo ou negativo, seguido do valor do saldo. 
 
-/*
+/
 
 let family = {
     incomes: [2500, 1000, 5000],
@@ -109,14 +109,21 @@ console.log(balance(family))
 // C = (F - 32) * 5/9
 // F = C * 9/5 + 32
 
-let numeros= new Array (10, 2, 5, 30, 25, 10, 20, 50)
+
+
+//FUNÇAO QUE CALCULA A MEDIA DE UM ARRAY
+
+/*
+let numeros = [1,2,3,10,5,5,5,5,]
+ 
 function media(nums) {
   let tam = nums.length;
-  let total = 0;
-  for(let i = 0; i<tam; i++) {
-    soma += nums[i];
+  let soma = 0;
+  for(var i = 0; i<tam; i++){
+    soma+=nums[i]
   }
-  return soma
+  return Math.round(soma/tam);
 }
-console.log(media())
+
+console.log (media(numeros))
 
