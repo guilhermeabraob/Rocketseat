@@ -109,6 +109,14 @@ console.log(balance(family))
 // C = (F - 32) * 5/9
 // F = C * 9/5 + 32
 
-function degreesConverter(degrees1, degrees2) {
-    
+let numeros= new Array (10, 2, 5, 30, 25, 10, 20, 50)
+function media(nums) {
+  let tam = nums.length;
+  let total = 0;
+  for(let i = 0; i<tam; i++) {
+    soma += nums[i];
+  }
+  return soma
 }
+console.log(media())
+
