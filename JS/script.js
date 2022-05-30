@@ -110,7 +110,7 @@ console.log(balance(family))
 // F = C * 9/5 + 32
 
 /*
-
+***MEU METODO****
 function conversor(fahrenheit) {
   let F = fahrenheit;
   let celsius = (fahrenheit - 32) * (5/9);
@@ -120,20 +120,43 @@ function conversor(fahrenheit) {
 conversor(20);
 console.log(conversor(20) + 'C°')
 
+
+
+
+
+
 */
 
 
+****MÉTODO DO PROFESSOR****
 
 
-function conversor(degrees) {
-    let degrees = 20;
-    let C = (F - 32) * 5/9;
-    let F = C * 9/5 + 32
-    if('celcius') {
-      console.log()
-    }
-    
-    }
+
+//FUNÇAO CONVERSOR DE GRAUS
+function conversorDegrees(degree) {
+  const celcius = degree.toUpperCase().includes('C')
+  const fahrenheit = degree.toUpperCase().includes('F')
+  if(!celcius && !fahrenheit) {
+    throw new Error('Degree not defined')
+  }
+
+  //fluxo ideal
+  let updateDegree = Number(degree.toUpperCase().replace('F', ''));
+  let formula = fahrenheit
+
+
+}
+
+
+try {
+  conversorDegrees('50f')
+  conversorDegrees('10C')
+  conversorDegrees('20Z')
+} catch (error) {
+  console.log(error)
+}
+
+
 -----------
 
 
