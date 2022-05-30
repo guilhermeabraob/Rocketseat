@@ -130,32 +130,38 @@ console.log(conversor(20) + 'C°')
 
 ****MÉTODO DO PROFESSOR****
 
-
-
-//FUNÇAO CONVERSOR DE GRAUS
 function conversorDegrees(degree) {
   const celcius = degree.toUpperCase().includes('C')
   const fahrenheit = degree.toUpperCase().includes('F')
+  
+  //fluxo de erro
   if(!celcius && !fahrenheit) {
     throw new Error('Degree not defined')
   }
 
-  //fluxo ideal
+  //fluxo ideal F -> C
   let updateDegree = Number(degree.toUpperCase().replace('F', ''));
-  let formula = fahrenheit
+  let formula = (fahrenheit) => (fahrenheit - 32) * 5/9
+  let degreeSign = 'C'
 
+  //fluxo alternativo C -> F
+  if(celcius) {
+    updateDegree = Number(degree.toUpperCase().replace('C', ''));
+    formula = celcius => celcius * 9/5 + 32
+    degreeSign = 'F'
+  }
+
+  return formula(updateDegree) + degreeSign
 
 }
 
-
 try {
-  conversorDegrees('50f')
-  conversorDegrees('10C')
-  conversorDegrees('20Z')
+  console.log(conversorDegrees('50f'))
+  console.log(conversorDegrees('10C'))
+  console.log(conversorDegrees('20Z'))
 } catch (error) {
   console.log(error)
 }
-
 
 -----------
 
