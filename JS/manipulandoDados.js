@@ -81,7 +81,7 @@ let myArray = new Array('a', 'b', 'c')
 console.log([
     'a', {type: 'array'}, 
     function () {return 'alo'}
-].length[2]) //dentro desses ultimos conchetes, escolhemos o 2 para ver quem esta na posição 2 dentro do aray, poderia ser qualquer posição. 
+].length[2]) //dentro desses ultimos conchetes, escolhemos o 2 para ver quem esta na posição 2 dentro do aray, poderia ser qualquer posição. A contagem de elementos do array anterior é 3. 
 
 --------
 
