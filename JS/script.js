@@ -234,10 +234,12 @@ const booksByCategory = [
 ];
 
 let totalOfCategories = booksByCategory.length
-console.log(totalOfCategories);
+console.log(totalOfCategories); //aqui estou calculando a quant de objetos do "booksByCategory"
 
-for(let category of booksByCategory) {
-  console.log('Total de categorias ', category.books.length)
+for(let categorias of booksByCategory) {
+  console.log('Total de livros na', categorias.category)
+  console.log(categorias.books.length)
 }
+
 
 
