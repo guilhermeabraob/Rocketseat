@@ -45,7 +45,7 @@ while(i < 10) {
 
 Explicação: Mesmo coisa que o For, devemos usar o While, quando o i não vai parar. 
 
-//For... of
+//For... of (percorre e imprime cada elemento de um ARRAY)
 
 /* 
 let name = 'Gui'
@@ -74,7 +74,7 @@ Pedro
 Marcell
 */
 
-//For...in = O For In, vai fazer um loop em cima de um objeto. 
+//For...in = PERCORRE E IMPRIME CADA ELEMENTO DE UM OBJETO, SENDO AS PROPRIEDADES OU OS VALORES DAS PROPRIEDADES
 
 /*
 let person = {
