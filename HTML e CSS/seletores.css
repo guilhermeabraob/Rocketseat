@@ -1,0 +1,154 @@
+/*
+Seletores:
+
+* Element Selector
+- Todos os Elementos em html
+Exemplo:
+
+No html:
+<h1>Título da pág</h1>
+
+
+No CSS
+h1 {
+    color: red
+    font size: 60rem
+}
+
+*ID Selector
+- Um lemento que tenha um atribuo 'id'
+- cada id deverá ser único
+Exemplo:
+
+No html:
+<p id="content">conteúdo da minha pág</p>
+
+No CSS
+#content {
+    color: red
+    font size: 60rem
+}
+
+
+
+*Class Selector
+- Os elementos que contenham um atributo 'class'
+- Podemos ter uma ou mais classes
+
+Exemplo:
+
+No html:
+<h1 id="title" class="red"> Título da pág</h1>
+
+No CSS
+.red {
+    color: red
+    font size: 60rem
+}
+
+
+*Atribuite selector (seletor apenas de atributos)
+- Um elemento que tenha um atributo especifico
+
+Exemplo:
+
+No html:
+<h1 id="title" class="red" title="Algum titulo"> Título da pág</h1>
+
+No CSS
+[title] {
+    color: red
+    font size: 60rem
+}
+
+*Pseudo-class selector
+- Elementos em um estado especifico
+
+Exemplo:
+
+No html:
+<h1 id="title" class="red"> Título da pág</h1>
+
+No CSS
+h1: hover{
+    color: red
+} aqui mudara a cor da palavra quando passamos o mouse em cima. 
+
+*Multiplos Seletores
+
+Exemplo:
+
+No html:
+<h1 id="title" class="red"> Título da pág</h1>
+<p title ="conteúdo da minha pág" id="content" class="red">Contéudo da minha pág</p>
+
+No CSS
+p, h1, .red {
+    color: red
+    font size: 60rem
+}
+
+
+* Combinators
+- combinadores, pois eles trabalham para buscar e combinar seletores a fim de aplicar uma estilização. 
+
+*Descendent Combinator
+- busca elemento dentro de outro elemento
+
+Ex:
+
+    <article>
+        <h2>Um titulo</h2>
+    </article>
+
+    <article>
+        <h2>Outro titulo</h2>
+    </article>
+
+    No css: 
+    body article h2 {
+        color: red
+    }
+
+    Aqui, o css foi buscar h2 dentro do aticle que esta dentro do body, isso acntece mesmo quando há outro elemento no meio.
+    
+    
+    * Child Combinator 
+    - identificado pelo sinal ">" entre dois seletores
+    - seleciona somente o elemento que é filho direto do pai
+    - elemento depois do filho direto serão desconsiderados. 
+    ex: body>ul>li
+
+
+
+    *Adjacent Sibiling(irmão) Combinator
+    - identificado pelo sinal + entre dois seletores
+    - seleciona somente o elemento do lado direto que é o irmão direto na hierarquia. 
+    ex: h1 + p
+
+    *General Sibiling Combinator
+    - identificado pelo sinal ~ entre dois seletores
+    - sleeciona todos elementos irmão, sendo direto ou não. 
+
+    ##DICA
+    Seletores muito especificos tendem a causar dificuldade no reuso das regras de estilização dos elementos. Muitas vezes, um simples uso de classes, torna o trabalho muito mais eficiente. 
+
+
+    * Pseudo-classes
+    - é um ipo de seletor que irá selecionar um elemento que estiver em um estado especifico. 
+    
+    ex: é o primeiro elemento dentro de uma caixa, ou, o elemento está com o poteiro do mouse em cima dele. 
+    
+    pseudo-classes começam com 2 pontos seguido do nome da pseudo class
+
+    :first-child
+    :nth-child()
+    :nth-of-type()
+
+
+    *Ações do usuário:
+    - Estados:
+        :hover (muda a cor quando passamos  mouse em cima da palavra escolhida)
+        :focus (deixamos em evidencia o campo a ser digitado quando passamos com o mouse em cima dele,também podemos mudar a cor da evidencia. 
+
+        Para estudar: https://developer.mozilla.org/en-US/
