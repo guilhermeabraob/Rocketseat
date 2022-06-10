@@ -16,7 +16,7 @@ h1 {
 }
 
 *ID Selector
-- Um lemento que tenha um atribuo 'id'
+- Um lemento que tenha um atributo 'id'
 - cada id deverá ser único
 Exemplo:
 
@@ -61,18 +61,6 @@ No CSS
     font size: 60rem
 }
 
-*Pseudo-class selector
-- Elementos em um estado especifico
-
-Exemplo:
-
-No html:
-<h1 id="title" class="red"> Título da pág</h1>
-
-No CSS
-h1: hover{
-    color: red
-} aqui mudara a cor da palavra quando passamos o mouse em cima. 
 
 *Multiplos Seletores
 
@@ -110,7 +98,7 @@ Ex:
         color: red
     }
 
-    Aqui, o css foi buscar h2 dentro do aticle que esta dentro do body, isso acntece mesmo quando há outro elemento no meio.
+    Aqui, o css foi buscar h2 dentro do article que esta dentro do body, isso acntece mesmo quando há outro elemento no meio.
     
     
     * Child Combinator 
@@ -133,13 +121,14 @@ Ex:
     ##DICA
     Seletores muito especificos tendem a causar dificuldade no reuso das regras de estilização dos elementos. Muitas vezes, um simples uso de classes, torna o trabalho muito mais eficiente. 
 
+ 
 
     * Pseudo-classes
-    - é um ipo de seletor que irá selecionar um elemento que estiver em um estado especifico. 
+    - é um tipo de seletor que irá selecionar um elemento que estiver em um estado especifico. 
     
-    ex: é o primeiro elemento dentro de uma caixa, ou, o elemento está com o poteiro do mouse em cima dele. 
+    ex: é o primeiro elemento dentro de uma caixa, ou, o elemento está com o ponteiro do mouse em cima dele. 
     
-    pseudo-classes começam com 2 pontos seguido do nome da pseudo class
+    pseudo-classes começa com 2 pontos seguido do nome da pseudo class
 
     :first-child
     :nth-child()
@@ -152,3 +141,15 @@ Ex:
         :focus (deixamos em evidencia o campo a ser digitado quando passamos com o mouse em cima dele,também podemos mudar a cor da evidencia. 
 
         Para estudar: https://developer.mozilla.org/en-US/
+
+
+*  Pseudo-Elements
+- Com eles, podemos adicionar elementos HTML pelo próprio CSS.
+
+Exemplos:
+::before (adciona algo antes do conteudo que você quer)
+::after (adciona algo depois do conteudo que você quer)
+::first-line (mexe apenas na primeira linha selecionada, inclusive, podemos adicionar edição na primeira linha utilizando o Pseudo-class, mexendo na primeira linha do segundo paragrafo apenas, por exemplo. 
+
+----------------
+

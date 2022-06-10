@@ -1,0 +1,50 @@
+/*
+# Display Block
+(div, section, p, h1, h2, ul, li, article)
+
+-ocupa 100% da largura do elemento pai
+-ocupa sempre a sua propria linha e é posicionado abaxio do elemento anterior 
+-a altura é definida de acordo com o conteúdo interno
+-é possível definir width e height
+-você pode definir valores de margin-top e margin-botton.
+
+Normal Flow (é a natureza do os displays block e inline)
+# Display Inline
+(a, span, b, i, em)
+
+-ocupa a largura total do seu conteudo apenas
+-um elemento inline apos outro inline, ambos, ocupam a mesma linha
+-nao é possivel definir width e heigth
+-nao é possível definir valores de margin-top e margin-botton
+-ao aplicar o float, automaticamente eles assumem caracteristicas de display block
+-se aplicado dentro de um texto, ira segui o fluxo do conteudo
+
+
+Os dois podem ter sua natureza alterada se usarmos: display: block ou inline.
+
+#Table
+<table>
+    <tr>
+        <td>
+
+Table inicia o cod de tabela, tr adiciona linha, e td adiciona coluna. 
+
+#Tableless
+É o uso das propriedades FLOAT e CLEAR possam influenciar o posicionamento dos elementos de como eles se posicionam naturalmente. 
+
+#Flexbox
+A caixa se torna flex, fazendo com que os elementos internos possam receber melhor:
+-alinhamento
+-ordenação
+-tamanhos flexiveis
+
+ex: 
+html:
+
+<div class="flexbox">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+</div>
+
+CSS:
