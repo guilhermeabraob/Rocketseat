@@ -1,0 +1,97 @@
+<!-- 
+* Flex Container (significa uma caixa que contém que elementos dentro, ou seja, itens detro dela.)
+    - Flex item (item de dentro da box flex)
+
+* Nesting = quando há um elemento dentro de outro elemento.
+
+* Axis (eixo)
+    - main (eixo principal)
+        - start, end
+    - cross (eixo cruzado)
+        - start, end
+
+* Flex sizing  
+    - o item vai ser flexível
+    - altera width/height dos itens para preenchimento dos espaços do flex container
+
+Ex: html:
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    css:
+
+    .container {
+        display: flex; (tornei o container flexivel)
+        border: 1px solid red;
+        height: 200px
+    }
+
+    .item {
+        flex: 1; (todos os itens da caixa preencherao os expaços de altura e largura sem usarmos as ferramentas width e height)
+    }
+
+    * Propriedades do Flex Container
+    -  mudar a direção dos itens
+    - adicionar várias linhas
+    - mexer no alinhamento
+        - principal
+        - cruzado
+    - mexer nos espaços entre os itens.
+
+* Direção dos Itens
+Ex: html:
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    css:
+
+    .container {
+        display: flex; (tornei o container flexivel, ou seja, a caixa que tem um display block(item embaixo de outro item) passa a ter uma natureza alterada, tornando o eixo principal de vertical para horizonta)
+        
+        flex-direction:row-reverse; (aqui eu jogaria os itens horizontalmente para o final da tela de forma reversa: CBA)
+
+        flex-direction: column; (aqui eu alterario a posição do eixo que passaria a ser vertical)
+    }
+
+    * Flex-wrap
+    - podemos usar multi-linhas
+    - ele irá criar novas linhas caso não haja mais espaços para os itens na tela. Cada linah criada, será um novo eixo principal sendo criado. 
+
+    ex:
+    .box {
+        flex-wrap: wrap;
+    }
+
+* Flex-flow
+Pode ser usado com duas propriedades. 
+
+ex: 
+.box {
+    flex-flow: column wrap;
+}
+
+* Justify-content
+
+-alinhamento dos elementos dentro da caixa
+- distribuição dos elementos
+
+É usado com os valores:
+-flex-star (deixa os itens no começo da caixa, vai depender se o eixo principal está na forma horizontal ou vertical
+- flex-end (oposto do flex-start)
+- center (central os itens na caixa)
+- space-around (insere espaçøs entre os itens tanto aos lados como em cima e embaixo)
+- space-between (insera espaços entre os itens)
+- space-evenly (insere espaços entre os itens de forma igual)
+
+
+
+
+
+-->
