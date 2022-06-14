@@ -1,0 +1,116 @@
+/*
+* Propriedades do Flex Container
+    -  mudar a direção dos itens
+    - adicionar várias linhas
+    - mexer no alinhamento
+        - principal
+        - cruzado
+    - mexer nos espaços entre os itens.
+
+* Direção dos Itens
+Ex: html:
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    css:
+
+    .container {
+        display: flex; (tornei o container flexivel, ou seja, a caixa que tem um display block(item embaixo de outro item) passa a ter uma natureza alterada, tornando o eixo principal de vertical para horizonta)
+        
+        flex-direction:row-reverse; (aqui eu jogaria os itens horizontalmente para o final da tela de forma reversa: CBA)
+
+        flex-direction: column; (aqui eu alterario a posição do eixo que passaria a ser vertical)
+    }
+
+    * Flex-wrap
+    - podemos usar multi-linhas
+    - ele irá criar novas linhas caso não haja mais espaços para os itens na tela. Cada linah criada, será um novo eixo principal sendo criado. 
+
+    ex:
+    .box {
+        flex-wrap: wrap;
+    }
+
+* Flex-flow
+Pode ser usado com duas propriedades. 
+
+ex: 
+.box {
+    flex-flow: column wrap;
+}
+
+* Justify-content
+
+-alinhamento dos elementos dentro da caixa
+- distribuição dos elementos
+
+É usado com os valores:
+-flex-star (deixa os itens no começo da caixa, vai depender se o eixo principal está na forma horizontal ou vertical
+- flex-end (oposto do flex-start)
+- center (central os itens na caixa)
+- space-around (insere espaçøs entre os itens tanto aos lados como em cima e embaixo)
+- space-between (insera espaços entre os itens)
+- space-evenly (insere espaços entre os itens de forma igual)
+
+*Alinhamento dos elementos no eixo cruzado
+
+- Valores:
+    - strech (vai esticar os elementos na pag
+    - flex-start (colocara os elementos no inicio do eixo cruzado na pag
+    - flex-end (oposto do start)
+    - center (centralizará os elementos na pag)
+
+* gap
+- espaços entre os elementos, atenção: os espaços inseridos é ENTRE os elementos e não ao lado.
+
+valores:
+    - flexiveis: %, em, rem
+    - fixas: pt, px
+
+-----------
+
+#Propriedades dos itens
+
+* Flex-basis
+
+valor: auto (deia os elementos com seus tamanhos proporcional a pag de forma automatica. 
+
+- tambem podemos usar o Flex-basis para mexer na altura e largura dos elementos, sem precisar usar o height e width. 
+
+*Flex-grow
+    - crescimento do item dentro do container em relação aos espaços vazios. 
+ex:
+    .box div:nth-child(3) {
+        flex-grow: 1;
+    }
+O ex acima diz que queremos que o terceiro item da caixa ocupe uma fraçao do espaço vazio, claro, respeitando a direção do seu eixo. O zero não causa alteração, o 2 por ex, solicitara que o item ocupe 2 fraçoes do espaço vazio. Quando menor o numero, maior o espaço. 
+
+*Flex-shrink
+- capacidade de encolher o item. 
+ex:
+    .box div:nth-child(3) {
+        flex-shrink: 1;
+    }
+- o ex acima pede que apenas o item 3 encolha, quanto maior o numero, mais o item encolherá. 
+
+* Shorhand Flex (atalho para usar a propriedade Flex. 
+
+valores nessa ordem:
+    - flex-grow
+    - flex-shrink
+    - flex basis
+
+    ex:
+    .box div {
+        flex: 1 2 1; (o primeiro 1 se refere ao flex-grow, o 2 se refere ao flex-shrink e o segundo 1, se refere ao flwx-basis.
+    }
+
+
+
+
+    
+*/
+

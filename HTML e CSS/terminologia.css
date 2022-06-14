@@ -1,0 +1,37 @@
+/*
+* Flex Container (significa uma caixa que contém que elementos dentro, ou seja, itens detro dela.)
+    - Flex item (item de dentro da box flex)
+
+* Nesting = quando há um elemento dentro de outro elemento.
+
+* Axis (eixo)
+    - main (eixo principal)
+        - start, end
+    - cross (eixo cruzado)
+        - start, end
+
+* Flex sizing  
+    - o item vai ser flexível
+    - altera width/height dos itens para preenchimento dos espaços do flex container
+
+Ex: html:
+
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    css:
+
+    .container {
+        display: flex; (tornei o container flexivel)
+        border: 1px solid red;
+        height: 200px
+    }
+
+    .item {
+        flex: 1; (todos os itens da caixa preencherao os expaços de altura e largura sem usarmos as ferramentas width e height)
+    }
+
+*/
