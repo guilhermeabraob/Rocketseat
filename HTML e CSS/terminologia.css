@@ -31,7 +31,7 @@ Ex: html:
     }
 
     .item {
-        flex: 1; (todos os itens da caixa preencherao os expaços de altura e largura sem usarmos as ferramentas width e height)
+        flex: 1; (todos os itens da caixa preencherao os espaços de altura e largura sem usarmos as ferramentas width e height)
     }
 
 */

@@ -18,7 +18,7 @@ Ex: html:
     css:
 
     .container {
-        display: flex; (tornei o container flexivel, ou seja, a caixa que tem um display block(item embaixo de outro item) passa a ter uma natureza alterada, tornando o eixo principal de vertical para horizonta)
+        display: flex; (tornei o container flexivel, ou seja, a caixa que tem um display block(item embaixo de outro item) passa a ter uma natureza alterada, tornando o eixo principal de vertical para horizontal)
         
         flex-direction:row-reverse; (aqui eu jogaria os itens horizontalmente para o final da tela de forma reversa: CBA)
 
@@ -27,7 +27,7 @@ Ex: html:
 
     * Flex-wrap
     - podemos usar multi-linhas
-    - ele irá criar novas linhas caso não haja mais espaços para os itens na tela. Cada linah criada, será um novo eixo principal sendo criado. 
+    - ele irá criar novas linhas caso não haja mais espaços para os itens na tela. Cada linha criada, será um novo eixo principal sendo criado. 
 
     ex:
     .box {
@@ -44,18 +44,18 @@ ex:
 
 * Justify-content
 
--alinhamento dos elementos dentro da caixa
+- alinhamento dos elementos dentro da caixa
 - distribuição dos elementos
 
 É usado com os valores:
--flex-star (deixa os itens no começo da caixa, vai depender se o eixo principal está na forma horizontal ou vertical
+- flex-start (deixa os itens no começo da caixa, vai depender se o eixo principal está na forma horizontal ou vertical
 - flex-end (oposto do flex-start)
 - center (central os itens na caixa)
 - space-around (insere espaçøs entre os itens tanto aos lados como em cima e embaixo)
 - space-between (insera espaços entre os itens)
 - space-evenly (insere espaços entre os itens de forma igual)
 
-*Alinhamento dos elementos no eixo cruzado
+* Alinhamento dos elementos no eixo cruzado
 
 - Valores:
     - strech (vai esticar os elementos na pag
@@ -96,7 +96,7 @@ ex:
     }
 - o ex acima pede que apenas o item 3 encolha, quanto maior o numero, mais o item encolherá. 
 
-* Shorhand Flex (atalho para usar a propriedade Flex. 
+* Shorthand Flex (atalho para usar a propriedade Flex)
 
 valores nessa ordem:
     - flex-grow
@@ -108,9 +108,5 @@ valores nessa ordem:
         flex: 1 2 1; (o primeiro 1 se refere ao flex-grow, o 2 se refere ao flex-shrink e o segundo 1, se refere ao flwx-basis.
     }
 
-
-
-
-    
 */
 

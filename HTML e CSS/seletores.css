@@ -84,7 +84,7 @@ p, h1, .red {
 - busca elemento dentro de outro elemento
 
 Ex:
-
+<body>
     <article>
         <h2>Um titulo</h2>
     </article>
@@ -92,7 +92,7 @@ Ex:
     <article>
         <h2>Outro titulo</h2>
     </article>
-
+</body>
     No css: 
     body article h2 {
         color: red
